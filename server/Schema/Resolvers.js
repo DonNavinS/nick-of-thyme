@@ -3,6 +3,9 @@ const resolvers = {
     sayHi: () => {
       return "Hello";
     },
+    getProducts: () => {
+      return;
+    },
   },
 };
 

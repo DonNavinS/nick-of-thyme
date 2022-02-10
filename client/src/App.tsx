@@ -1,11 +1,13 @@
 import { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div>
-      <h1 className="underline ">test</h1>
+    <div className="min-w-full min-h-screen">
+      <Header />
+      <Footer />
     </div>
   );
 }
