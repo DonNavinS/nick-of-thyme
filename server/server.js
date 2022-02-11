@@ -5,11 +5,9 @@ const express = require("express");
 const PORT = process.env.PORT || 3001;
 const { typeDefs } = require("./Schema/TypeDefs");
 const { resolvers } = require("./Schema/Resolvers");
-const productRoutes = require("./routes/productRoutes");
 
 const app = express();
 app.use(express.json());
-app.use("/products", productRoutes);
 
 mongoose.connect(connectionString, { useNewUrlParser: true });
 const db = mongoose.connection;

@@ -1,13 +1,13 @@
 const { gql } = require("apollo-server-express");
 
 const typeDefs = gql`
-  type Products {
+  type Product {
     name: String
   }
 
   type Query {
     sayHi: String!
-    getProducts: [Products]
+    getProducts: [Product]
   }
 `;
 
