@@ -9,6 +9,7 @@ import {
   useQuery,
   gql,
 } from "@apollo/client";
+import Home from "./pages/Home.jsx";
 
 const client = new ApolloClient({
   uri: "http://localhost:3001/graphql",
@@ -16,12 +17,11 @@ const client = new ApolloClient({
 });
 
 function App() {
-  const getData = () => {};
   return (
     <ApolloProvider client={client}>
       <div className="min-w-full min-h-screen">
         <Header />
-        <button onClick={getData}> CLICK</button>
+        <Home />
         <Footer />
       </div>
     </ApolloProvider>

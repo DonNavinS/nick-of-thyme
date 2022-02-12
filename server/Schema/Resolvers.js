@@ -8,6 +8,9 @@ const resolvers = {
     getProducts: async () => {
       return await Product.find();
     },
+    getProductByName: async () => {
+      return await Product.find({ name: "SECOND TEST" });
+    },
   },
 };
 
